@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>isoCMS</title>
+
+  <script type="text/JavaScript" src="js/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+    integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <script type="text/JavaScript" src="js/popper.min.js"></script>
+  <script type="text/JavaScript" src="js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/common.css" />
+  <script type="text/JavaScript" src="js/common.js"></script>
+</head>
+
+<body>
+  <header id="header">
+    <div class="container-fluid my-1 border-bottom header d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6">
+            <h1 title="isoCMS"><img src="/images/logo.png" alt="logo" width="98" height="47" /></h1>
+          </div>
+          <div class="col-6">
+            <div class="header_right">
+              <ul class="list-none d-flex align-items-center justify-content-end m-0">
+                <li class="px-2">
+                  <div class="dropdown">
+                    <button class="btn border-0 d-flex align-items-center" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <img src="/images/vietnam.png" alt="vn" height="25px" />
+                      &nbsp;
+                      <i class="fa-solid fa-angle-down fa-2xs"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#"><img src="/images/us.png" alt="us"
+                            height="25px" />&nbsp;US</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item d-flex align-items-center" href="#"><img src="/images/korea.png"
+                            alt="us" height="25px" />&nbsp;KOREA</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="px-2">
+                  <a href="#"><i class="fa-solid fa-cart-shopping" style="vertical-align: middle;"></i>&nbsp;<span>Giỏ
+                      hàng</span></a>
+                </li>
+                <li class="px-2">
+                  <a href="#"><span>Hỏi đáp</span></a>
+                </li>
+                <li class="px-2">
+                  <a href="#"><span>Đăng nhập</span></a>
+                </li>
+                <li class="px-2">
+                  <a href="#"><span class="register btn_main">Đăng ký</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container menu">
+      <ul class="list-none d-flex p-0">
+        <li>Du lịch trong nước</li>
+        <li>Du lịch nước ngoài</li>
+        <li>Tours trọn gói</li>
+        <li>Lưu trú</li>
+        <li>Du thuyền</li>
+        <li>Voucher</li>
+        <li>Tin tức</li>
+        <li>Blog</li>
+        <li>
+          <span class="border-2 border-start sale ps-4"> <i class="fa-solid fa-gift"
+              style="color: #fda156;"></i>&nbsp;Khuyến mãi </span>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section id="slider" class="position-relative">
+      <div class="owl-carousel owl-carousel_slider owl-theme">
+        <div class="item">
+          <img src="/images/banner_home.png" alt="" />
+        </div>
+        <div class="item">
+          <img src="/images/anh-30.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img src="/images/qc.jpg" alt="" />
+        </div>
+      </div>
+      <div class="box_search">
+        <div class="container">
+          <form action="" class="find__trip--form" method="post">
+            <div class="input_key_word"><input class="form-control" name="key" value="" autocomplete="off"
+                placeholder="Tìm theo điểm đến, tour,...." /></div>
+            <div class="form_select form_select_destination">
+              <select class="form-control slb" name="departure_point_id" id="departure_point_ID">
+                <option value="0">Điểm khởi hành</option>
+                <option value="651" title="Hồ Chí Minh">Hồ Chí Minh</option>
+                <option value="653" title="Đà Nẵng">Đà Nẵng</option>
+                <option value="672" title="Phuket">Phuket</option>
+                <option value="806" title="Phượng Hoàng Cổ Trấn">Phượng Hoàng Cổ Trấn</option>
+                <option value="700" title="Ninh Bình">Ninh Bình</option>
+                <option value="808" title="Trương Gia Giới">Trương Gia Giới</option>
+                <option value="1" title="Hà Nội">Hà Nội</option>
+                <option value="899" title="Gangnam-Gu">Gangnam-Gu</option>
+                <option value="761" title="Đảo Tuần Châu">Đảo Tuần Châu</option>
+              </select>
+            </div>
+            <div class="form_select form_select_duration">
+              <select class="form-control" name="duration_id" id="duration_ID">
+                <option value="0">Hành trình tour</option>
+                <option value="1-0">Full day</option>
+                <option value="2-1">2 ngày / 1 đêm</option>
+                <option value="2-2">2 ngày / 2 đêm</option>
+                <option value="3-3">3 ngày / 3 đêm</option>
+                <option value="3-4">3 ngày / 4 đêm</option>
+                <option value="3-1">3 ngày / 1 đêm</option>
+                <option value="3-2">3 ngày / 2 đêm</option>
+                <option value="3-0">3 ngày / 0 đêm</option>
+                <option value="4-3">4 ngày / 3 đêm</option>
+                <option value="5-4">5 ngày / 4 đêm</option>
+                <option value="6-12">6 ngày / 12 đêm</option>
+                <option value="6-5">6 ngày / 5 đêm</option>
+                <option value="7-6">7 ngày / 6 đêm</option>
+                <option value="8-7">8 ngày / 7 đêm</option>
+                <option value="10-9">10 ngày / 9 đêm</option>
+                <option value="12-11">12 ngày / 11 đêm</option>
+                <option value="13-12">13 ngày / 12 đêm</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn_find_trip btn_main" id="findtBtn">Tìm kiếm</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="why">
+      <div class="container">
+        <div class="owl-carousel owl-carousel_why owl-theme">
+          <div class="item__why box_col">
+            <div class="item__why--icon"><img src="/images/reputation.png" data-src="/images/reputation.png" width="55"
+                height="55" alt="Mức giá tốt nhất" class="owl-lazy img100" style="opacity: 1;" /></div>
+            <div class="item__why--artice">
+              <p class="title size20 mb10">Mức giá tốt nhất</p>
+              <div class="intro limit_2line">Đảm bảo mức giá hài lòng mọi khách hàng</div>
+            </div>
+          </div>
+          <div class="item__why box_col">
+            <div class="item__why--icon"><img src="/images/reputation.png" data-src="/images/reputation.png" width="55"
+                height="55" alt="Mức giá tốt nhất" class="owl-lazy img100" style="opacity: 1;" /></div>
+            <div class="item__why--artice">
+              <p class="title size20 mb10">Mức giá tốt nhất</p>
+              <div class="intro limit_2line">Đảm bảo mức giá hài lòng mọi khách hàng</div>
+            </div>
+          </div>
+          <div class="item__why box_col">
+            <div class="item__why--icon"><img src="/images/reputation.png" data-src="/images/reputation.png" width="55"
+                height="55" alt="Mức giá tốt nhất" class="owl-lazy img100" style="opacity: 1;" /></div>
+            <div class="item__why--artice">
+              <p class="title size20 mb10">Mức giá tốt nhất</p>
+              <div class="intro limit_2line">Đảm bảo mức giá hài lòng mọi khách hàng</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="attractive_tour">
+      <div class="container-fluid">
+        <div class="text-center">
+          <h2 class="attractive_tour-title">Trải Nghiệm Không Thể Bỏ Lỡ</h2>
+          <div class="attractive_tour-intro">
+            <p>Khám phá những câu chuyện, cảm hứng và ý tưởng du lịch độc đáo cho chuyến vi vu tiếp theo của bạn</p>
+          </div>
+        </div>
+      </div>
+      <div class="attractive_tour-content w-100">
+        <div class="attractive_tour-item">
+          <a href="">
+            <div class="position-relative attractive_tour-img">
+              <img src="/images/beach.jpg" alt="beach" class="w-100">
+            </div>
+          </a>
+          <div class="attractive_tour-body">
+            <h3 class="limit_2line">
+              <a href="" title="Tour du lịch Thái Lan [PHUKET – ĐẢO PHI PHI – VỊNH PHANG NGA]">
+                Tour du lịch Thái Lan [PHUKET – ĐẢO PHI PHI – VỊNH PHANG NGA]
+              </a>
+            </h3>
+            <div class="attractive_tour-info">
+              <a href="" class="d-flex vote_result mb-2">
+                <p>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </p>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <p><span> 0.0/5.0 | </span><span> 0 đánh giá</span></p>
+              </a>
+              <div class="duration mb-4">
+                <a href="" class="me-3"><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;<span>4 ngày 3 đêm</span></a>
+                <span class="start_tour"><a href=""> Khởi hành: Hồ Chí Minh</a></span>
+              </div>
+              <div class="body_price">
+                <p class="mb-0 body_price-only">Chỉ từ</p>
+                <p class="mb-0 price_result">10.499.000đ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="attractive_tour-item">
+          <a href="">
+            <div class="position-relative attractive_tour-img">
+              <img src="/images/beach.jpg" alt="beach" class="w-100">
+            </div>
+          </a>
+          <div class="attractive_tour-body">
+            <h3 class="limit_2line">
+              <a href="" title="Tour du lịch Thái Lan [PHUKET – ĐẢO PHI PHI – VỊNH PHANG NGA]">
+                Tour du lịch Thái Lan [PHUKET – ĐẢO PHI PHI – VỊNH PHANG NGA]
+              </a>
+            </h3>
+            <div class="attractive_tour-info">
+              <a href="" class="d-flex vote_result mb-2">
+                <p>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </p>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <p><span> 0.0/5.0 | </span><span> 0 đánh giá</span></p>
+              </a>
+              <div class="duration mb-4">
+                <a href="" class="me-3"><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;<span>4 ngày 3 đêm</span></a>
+                <span class="start_tour"><a href=""> Khởi hành: Hồ Chí Minh</a></span>
+              </div>
+              <div class="body_price">
+                <p class="mb-0 body_price-only">Chỉ từ</p>
+                <p class="mb-0 price_result">10.499.000đ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="attractive_tour-item">
+          <a href="">
+            <div class="position-relative attractive_tour-img">
+              <img src="/images/beach.jpg" alt="beach" class="w-100">
+            </div>
+          </a>
+          <div class="attractive_tour-body">
+            <h3 class="limit_2line">
+              <a href="" title="Tour du lịch Thái Lan [PHUKET – ĐẢO PHI PHI – VỊNH PHANG NGA]">
+                Tour du lịch Thái Lan [PHUKET – ĐẢO PHI PHI – VỊNH PHANG NGA]
+              </a>
+            </h3>
+            <div class="attractive_tour-info">
+              <a href="" class="d-flex vote_result mb-2">
+                <p>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </p>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <p><span> 0.0/5.0 | </span><span> 0 đánh giá</span></p>
+              </a>
+              <div class="duration mb-4">
+                <a href="" class="me-3"><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;<span>4 ngày 3 đêm</span></a>
+                <span class="start_tour"><a href=""> Khởi hành: Hồ Chí Minh</a></span>
+              </div>
+              <div class="body_price">
+                <p class="mb-0 body_price-only">Chỉ từ</p>
+                <p class="mb-0 price_result">10.499.000đ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="attractive_tour-item">
+          <a href="">
+            <div class="position-relative attractive_tour-img">
+              <img src="/images/beach.jpg" alt="beach" class="w-100">
+            </div>
+          </a>
+          <div class="attractive_tour-body">
+            <h3 class="limit_2line">
+              <a href="" title="Tour du lịch Thái Lan [PHUKET – ĐẢO PHI PHI – VỊNH PHANG NGA]">
+                Tour du lịch Thái Lan [PHUKET – ĐẢO PHI PHI – VỊNH PHANG NGA]
+              </a>
+            </h3>
+            <div class="attractive_tour-info">
+              <a href="" class="d-flex vote_result mb-2">
+                <p>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </p>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <p><span> 0.0/5.0 | </span><span> 0 đánh giá</span></p>
+              </a>
+              <div class="duration mb-4">
+                <a href="" class="me-3"><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;<span>4 ngày 3 đêm</span></a>
+                <span class="start_tour"><a href=""> Khởi hành: Hồ Chí Minh</a></span>
+              </div>
+              <div class="body_price">
+                <p class="mb-0 body_price-only">Chỉ từ</p>
+                <p class="mb-0 price_result">10.499.000đ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="attractive_tour-item">
+          <a href="">
+            <div class="position-relative attractive_tour-img">
+              <img src="/images/beach.jpg" alt="beach" class="w-100">
+            </div>
+          </a>
+          <div class="attractive_tour-body">
+            <h3 class="limit_2line">
+              <a href="" title="Tour du lịch Thái Lan [PHUKET – ĐẢO PHI PHI – VỊNH PHANG NGA]">
+                Tour du lịch Thái Lan [PHUKET – ĐẢO PHI PHI – VỊNH PHANG NGA]
+              </a>
+            </h3>
+            <div class="attractive_tour-info">
+              <a href="" class="d-flex vote_result mb-2">
+                <p>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                  <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                </p>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <p><span> 0.0/5.0 | </span><span> 0 đánh giá</span></p>
+              </a>
+              <div class="duration mb-4">
+                <a href="" class="me-3"><i class="fa-regular fa-clock"></i>&nbsp;&nbsp;<span>4 ngày 3 đêm</span></a>
+                <span class="start_tour"><a href=""> Khởi hành: Hồ Chí Minh</a></span>
+              </div>
+              <div class="body_price">
+                <p class="mb-0 body_price-only">Chỉ từ</p>
+                <p class="mb-0 price_result">10.499.000đ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div style="height: 50px;"></div>
+    <section id="top_favorite_destinations">
+      <div class="container">
+        <h2 class="section_box-title">Top điểm đến yêu thích</h2>
+        <div class="section_box-intro">
+          <p>Khám phá những câu chuyện, cảm hứng và ý tưởng du lịch độc đáo cho chuyến vi vu tiếp theo của bạn</p>
+        </div>
+        <div class="top_favorite-container">
+          <img class='top_favorite-item top_favorite-item_1' src="/images/hn.jpg" alt="" />
+          <img class='top_favorite-item top_favorite-item_2' src="/images/fansipan2.jpg" alt="" />
+          <img class='top_favorite-item top_favorite-item_3' src="/images/fansipan2.jpg" alt="" />
+          <img class='top_favorite-item top_favorite-item_4' src="/images/fansipan2.jpg" alt="" />
+          <img class='top_favorite-item top_favorite-item_5' src="/images/fansipan2.jpg" alt="" />
+          <img class='top_favorite-item top_favorite-item_6' src="/images/fansipan2.jpg" alt="" />
+          <img class='top_favorite-item top_favorite-item_7' src="/images/fansipan2.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <div style="height: 50px;"></div>
+    <section id="tour__inbound">
+      <div class="container">
+        <h2 class="section_box-title">Du lịch trong nước</h2>
+        <div class="section_box-intro">
+          <p>Khám phá những câu chuyện, cảm hứng và ý tưởng du lịch độc đáo cho chuyến vi vu tiếp theo của bạn</p>
+        </div>
+        <div class="owl-carousel owl-theme owl-carousel-tour__inbound">
+          <div class="item"><img src="/images/fansipan2.jpg" alt=""></div>
+          <div class="item"><img src="/images/fansipan2.jpg" alt=""></div>
+          <div class="item"><img src="/images/fansipan2.jpg" alt=""></div>
+          <div class="item"><img src="/images/fansipan2.jpg" alt=""></div>
+          <!-- Thêm nội dung khác nếu cần -->
+        </div>
+      </div>
+    </section>
+    <div style="height: 50px;"></div>
+  </main>
+
+  <script>
+    $(".owl-carousel_slider").owlCarousel({
+      loop: true,
+      margin: 15,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      animateOut: "fadeOut",
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        1000: {
+          items: 1,
+        },
+      },
+    });
+
+    $(".owl-carousel_why").owlCarousel({
+      loop: true,
+      margin: 15,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 2000,
+      animateOut: "fadeOut",
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        1000: {
+          items: 3,
+        },
+      },
+    });
+
+    $('.owl-carousel-tour__inbound').owlCarousel({
+      rtl: true, // Bật RTL
+      loop: true,
+      margin: 10,
+      nav: true,
+      navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"], // Sử dụng biểu tượng mũi tên
+      // Các cấu hình khác nếu cần
+      dots: false,
+    });
+  </script>
+</body>
+
+</html>
